@@ -47,10 +47,10 @@ public class GamingConsoleReport {
         System.out.println("GAMING CONSOLE REPORT");
         System.out.println(divider);
 
-        // Header columns (empty column for city names, followed by console names)
+        // Header columns
         System.out.printf("%-16s%-16s%-16s%-16s%n", "", consoles[0], consoles[1], consoles[2]);
 
-        // Print each row (city name and console sales numbers)
+        // Print each row
         for (int i = 0; i < cities.length; i++) {
             System.out.printf("%-16s%-16d%-16d%-16d%n",
                     cities[i],
@@ -59,10 +59,6 @@ public class GamingConsoleReport {
                     sales[i][2]
             );
         }
-
-        // ---------------------------------------------------------------------
-        // 4. PRINTING TOTALS AND TOP PERFORMING CITY (4 Marks)
-        // ---------------------------------------------------------------------
 
         System.out.println(divider);
         System.out.println("CONSOLE SALES TOTALS FOR EACH CITY");
